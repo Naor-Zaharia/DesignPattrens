@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BB892232-34CC-475E-B0DF-A5AC9EE2763A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFacebook</RootNamespace>
+    <AssemblyName>WindowsFacebook</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\FacebookApi\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper">
+      <HintPath>..\FacebookApi\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CollageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CollageForm.Designer.cs">
+      <DependentUpon>CollageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendsAlbumsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendsAlbumsForm.Designer.cs">
+      <DependentUpon>FriendsAlbumsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendStatusForm.Designer.cs">
+      <DependentUpon>FriendStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LikedPagesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LikedPagesForm.Designer.cs">
+      <DependentUpon>LikedPagesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenuForm.Designer.cs">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyAlbumsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyAlbumsForm.Designer.cs">
+      <DependentUpon>MyAlbumsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProfileForm.Designer.cs">
+      <DependentUpon>MyProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SoulMateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoulMateForm.Designer.cs">
+      <DependentUpon>SoulMateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserActionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserActionsForm.Designer.cs">
+      <DependentUpon>UserActionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WatchFeedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WatchFeedForm.Designer.cs">
+      <DependentUpon>WatchFeedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyEventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyEventsForm.Designer.cs">
+      <DependentUpon>MyEventsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendsListForm.Designer.cs">
+      <DependentUpon>FriendsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupsForm.Designer.cs">
+      <DependentUpon>GroupsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WritePostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WritePostForm.Designer.cs">
+      <DependentUpon>WritePostForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CollageForm.resx">
+      <DependentUpon>CollageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendsAlbumsForm.resx">
+      <DependentUpon>FriendsAlbumsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendStatusForm.resx">
+      <DependentUpon>FriendStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LikedPagesForm.resx">
+      <DependentUpon>LikedPagesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenuForm.resx">
+      <DependentUpon>MainMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyAlbumsForm.resx">
+      <DependentUpon>MyAlbumsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProfileForm.resx">
+      <DependentUpon>MyProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SoulMateForm.resx">
+      <DependentUpon>SoulMateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserActionsForm.resx">
+      <DependentUpon>UserActionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WatchFeedForm.resx">
+      <DependentUpon>WatchFeedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyEventsForm.resx">
+      <DependentUpon>MyEventsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendsListForm.resx">
+      <DependentUpon>FriendsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupsForm.resx">
+      <DependentUpon>GroupsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WritePostForm.resx">
+      <DependentUpon>WritePostForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WindowsFacebookLogic\WindowsFacebookLogic.csproj">
+      <Project>{3079de6a-26ea-4cb6-afea-86b73b272296}</Project>
+      <Name>WindowsFacebookLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowsLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FacebookLogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
