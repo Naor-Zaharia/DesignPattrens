@@ -1,1 +1,1 @@
-# DesignPattrens
+A windows facebook interface with an emphasis on good OOP principles, readability, future maintenance and design patterns
